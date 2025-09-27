@@ -1,20 +1,20 @@
 // Hero.jsx
-import { ChevronDown, Download, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import rajProfile from '@/assets/raj-profile-new.webp';
+import { ChevronDown, Download, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import rajProfile from "@/assets/raj-profile-new.webp";
 
 const Hero = () => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -56,7 +56,7 @@ const Hero = () => {
                 <Mail className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
                 Let's Talk
               </Button>
-              <a href="/Raj-Resume.pdf" download="Raj-Resume">
+              <a href="/Raj-Resume.pdf" download="Raj-Kumar-Resume">
                 <Button
                   variant="outline"
                   className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg font-semibold transition-smooth"
