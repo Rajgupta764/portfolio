@@ -1,73 +1,196 @@
-# Welcome to your Lovable project
+# 🌟 Personal Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Showcasing my projects, skills, and experience as a Full-Stack Developer.
 
-**URL**: https://lovable.dev/projects/755e4c9f-b48c-48f9-89d7-e0597020a9f2
+![Portfolio Preview](./public/Preview.png)
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Modern UI/UX**: Clean and professional design with smooth animations
+- **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
+- **Dark/Light Theme**: Toggle between themes for better user experience
+- **Interactive Sections**: 
+  - Hero section with animated profile
+  - About me with skills showcase
+  - Projects portfolio with live demos
+  - Contact form with email integration
+- **Performance Optimized**: Fast loading times and smooth animations
+- **SEO Friendly**: Meta tags and semantic HTML for better search engine visibility
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/755e4c9f-b48c-48f9-89d7-e0597020a9f2) and start prompting.
+- **Frontend Framework**: React 18
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Package Manager**: Bun
+- **Deployment**: Vercel/Netlify
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📦 Installation
 
-**Use your preferred IDE**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Rajgupta764/portfolio.git
+   cd RAJPORTFOLIO
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. **Install dependencies**
+   ```bash
+   bun install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3. **Start development server**
+   ```bash
+   bun run dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Follow these steps:
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🏗️ Build for Production
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+bun run build
+# or
+npm run build
+# or
+yarn build
 ```
 
-**Edit a file directly in GitHub**
+The production-ready files will be in the `dist` folder.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure
 
-**Use GitHub Codespaces**
+```
+RAJPORTFOLIO/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── .gitignore
+├── .hintrc
+├── bun.lockb
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite-env.d.ts
+└── vite.config.ts
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Customization
 
-## What technologies are used for this project?
+### Update Personal Information
 
-This project is built with:
+1. **Hero Section**: Edit `src/components/Hero.tsx`
+   - Update name, title, and description
+   - Replace profile image in `src/assets/`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+2. **About Section**: Edit `src/components/About.tsx`
+   - Update bio and skills
 
-## How can I deploy this project?
+3. **Projects**: Edit `src/components/Projects.tsx`
+   - Add/remove projects
+   - Update project details, images, and links
 
-Simply open [Lovable](https://lovable.dev/projects/755e4c9f-b48c-48f9-89d7-e0597020a9f2) and click on Share -> Publish.
+4. **Contact Information**: Edit `src/components/Contact.tsx`
+   - Update email and social media links
 
-## Can I connect a custom domain to my Lovable project?
+### Update Resume
 
-Yes, you can!
+Replace `public/Raj-Resume.pdf` with your own resume file.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Change Theme Colors
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Edit `tailwind.config.js` to customize colors:
+```js
+theme: {
+  extend: {
+    colors: {
+      'neon-cyan': '#06b6d4',
+      'neon-purple': '#a855f7',
+      // Add your custom colors
+    }
+  }
+}
+```
+
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Vite and deploy
+
+### Deploy to Netlify
+
+1. Push your code to GitHub
+2. Import your repository on [Netlify](https://netlify.com)
+3. Build command: `npm run build`
+4. Publish directory: `dist`
+
+## 📝 Environment Variables
+
+Create a `.env` file in the root directory if you need environment variables:
+
+```env
+VITE_EMAIL_SERVICE_ID=your_service_id
+VITE_EMAIL_TEMPLATE_ID=your_template_id
+VITE_EMAIL_PUBLIC_KEY=your_public_key
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Rajgupta764/portfolio/issues).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Raj Kumar**
+
+- GitHub: [@Rajgupta764](https://github.com/Rajgupta764)
+- LinkedIn: [raj-kumar-cse](https://linkedin.com/in/raj-kumar-cse)
+- Portfolio: [your-portfolio-url.com](https://your-portfolio-url.com)
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for beautiful UI components
+- [Lucide](https://lucide.dev/) for amazing icons
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first CSS framework
+
+## ⭐ Show Your Support
+
+Give a ⭐️ if you like this project!
+
+---
+
+Made with ❤️ by Raj Kumar
